@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   wordpress:
@@ -21,7 +21,8 @@ services:
       MYSQL_USER: wp_user
       MYSQL_PASSWORD: wp_password
     volumes:
-      - db_data:/var/lib/mysql
+      - ./mysql-init:/docker-entrypoint-initdb.d
+      - ./mysql-data:/var/lib/mysql
 
 volumes:
   db_data:

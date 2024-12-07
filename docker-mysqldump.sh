@@ -1,0 +1,1 @@
+docker exec -it wordpress-cms-assignment-db-1 sh -c 'mysqldump -u root -proot_password wp_database > /tmp/wordpress_database.sql' && docker cp wordpress-cms-assignment-db-1:/tmp/wordpress_database.sql ./mysql-init/wordpress_database.sql
