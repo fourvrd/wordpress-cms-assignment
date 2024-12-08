@@ -5,6 +5,7 @@
 ```
 
 Podczas uruchomienia, przy inicjalizacji kontener z bazą danych wczyta ostatniego dumpa znajdującego się w folderze `mysql-init`.
+Strona będzie dostępna pod adresem `localhost:8080`.
 
 ## Dumpowanie bazy
 
